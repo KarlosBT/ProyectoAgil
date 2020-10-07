@@ -4,17 +4,30 @@ import { Location } from "@angular/common";
 import { Router } from "@angular/router";
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
+declare interface SecondRouteInfo {
+  path: string;
+  title: string;
+}
 @Component({
   selector: "app-navbar",
   templateUrl: "./navbar.component.html",
   styleUrls: ["./navbar.component.css"]
 })
+
 export class NavbarComponent implements OnInit, OnDestroy {
   private listTitles: any[];
   location: Location;
   mobile_menu_visible: any = 0;
   private toggleButton: any;
   private sidebarVisible: boolean;
+
+  private SecondRoutes:SecondRouteInfo[]=[
+    {
+      path: "/RegistrarProducto",
+      title: "Productos",
+    }
+  ];
+
 
   public isCollapsed = true;
 
@@ -159,6 +172,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
     }
   }
 
+
   getTitle() {
     var titlee = this.location.prepareExternalUrl(this.location.path());
     if (titlee.charAt(0) === "#") {
@@ -168,6 +182,12 @@ export class NavbarComponent implements OnInit, OnDestroy {
     for (var item = 0; item < this.listTitles.length; item++) {
       if (this.listTitles[item].path === titlee) {
         return this.listTitles[item].title;
+      }
+    }
+
+    for (var item = 0; item < this.SecondRoutes.length; item++) {
+      if (this.SecondRoutes[item].path === titlee) {
+        return this.SecondRoutes[item].title;
       }
     }
     return "Dashboard";
