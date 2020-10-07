@@ -1,138 +1,139 @@
 
 <div class=" content">
   <div class=" row">
-    <div class=" col-md-12">
+    <div class=" col-md-12 ">
       <div class=" card">
-        <div class=" card-header"><h4 class=" title">Registrar Producto</h4></div>
+        <div class=" card-header"><h4 class=" title">Registro de productos</h4>
+          <p class=" category">
+            Los datos marcados con (*) son de carácter obligatorio
+          </p>
+        </div>
+
         <div class=" card-body">
           <form>
             <div class=" row">
-              <div class=" col-md-5 pr-md-1">
-                <div class=" form-group">
-                  <label> Company (disabled) </label>
-                  <input
-                    class=" form-control"
-                    disabled=""
-                    placeholder="Company"
-                    type="text"
-                    value="Creative Code Inc."
-                  />
-                </div>
-              </div>
-              <div class=" col-md-3 px-md-1">
-                <div class=" form-group">
-                  <label> Username </label>
-                  <input
-                    class=" form-control"
-                    placeholder="Username"
-                    type="text"
-                    value="michael23"
-                  />
-                </div>
-              </div>
-              <div class=" col-md-4 pl-md-1">
-                <div class=" form-group">
-                  <label for="exampleInputEmail1"> Email address </label>
-                  <input
-                    class=" form-control"
-                    placeholder="mike@email.com"
-                    type="email"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class=" row">
               <div class=" col-md-6 pr-md-1">
                 <div class=" form-group">
-                  <label> First Name </label>
+                  <label> Nombre </label>
                   <input
                     class=" form-control"
-                    placeholder="Company"
+                    placeholder="Producto"
                     type="text"
-                    value="Mike"
-                  />
-                </div>
-              </div>
-              <div class=" col-md-6 pl-md-1">
-                <div class=" form-group">
-                  <label> Last Name </label>
-                  <input
-                    class=" form-control"
-                    placeholder="Last Name"
-                    type="text"
-                    value="Andrew"
+                    value="Nuevo producto"
                   />
                 </div>
               </div>
             </div>
             <div class=" row">
-              <div class=" col-md-12">
+              <div class=" col-md-5 pr-md-4">
                 <div class=" form-group">
-                  <label> Address </label>
+                  <label> Referencia </label>
                   <input
                     class=" form-control"
-                    placeholder="Home Address"
+                    placeholder="Referencia"
                     type="text"
-                    value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
+                    value="ej: RKJW123"
                   />
                 </div>
               </div>
-            </div>
-            <div class=" row">
-              <div class=" col-md-4 pr-md-1">
+              <div class=" col-md-5 pl-md-4">
                 <div class=" form-group">
-                  <label> City </label>
+                  <label> Cantidad </label>
                   <input
                     class=" form-control"
-                    placeholder="City"
-                    type="text"
-                    value="Mike"
-                  />
-                </div>
-              </div>
-              <div class=" col-md-4 px-md-1">
-                <div class=" form-group">
-                  <label> Country </label>
-                  <input
-                    class=" form-control"
-                    placeholder="Country"
-                    type="text"
-                    value="Andrew"
-                  />
-                </div>
-              </div>
-              <div class=" col-md-4 pl-md-1">
-                <div class=" form-group">
-                  <label> Postal Code </label>
-                  <input
-                    class=" form-control"
-                    placeholder="ZIP Code"
+                    placeholder="Cantidad"
                     type="number"
+                    value="3"
                   />
                 </div>
               </div>
             </div>
+
             <div class=" row">
-              <div class=" col-md-8">
+              <div class=" col-md-5 pl-md-3">
                 <div class=" form-group">
-                  <label> About Me </label>
+                  <label> Marca </label>
+                  <div class="input-group">
+                    <select class="custom-select" name="miselect" [(ngModel)]="seleccionado">
+                      <option [value]="item" *ngFor="let item of lista">{{item}}</option>
+                      </select>
+                      <button class=" btn custom" >
+                        <i class=" tim-icons icon-simple-add"> </i>
+                      </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class=" col-md-2 pl-md-4 pr-md-1">
+                <div class=" form-group">
+                  <label> Precio </label>
+                  <input
+                    class=" form-control"
+                    placeholder="Precio"
+                    type="number"
+                    value="100"
+                  />
+                </div>
+              </div>
+              <div class=" col-md-2 pl-md-4 pr-md-0">
+                <div class=" form-group">
+                  <label> Costo </label>
+                  <input
+                    class=" form-control"
+                    placeholder="Costo"
+                    type="number"
+                    value="100"
+                  />
+                </div>
+              </div>
+            </div>
+
+
+            <div class=" row">
+              <div class=" col-md-5">
+                <div class=" form-group">
+                  <label> Descripción </label>
                   <textarea
                     class=" form-control"
                     cols="80"
-                    placeholder="Here can be your description"
+                    placeholder="Aqui va la descripción"
                     rows="4"
-                    value="Mike"
-                  >
-Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.
-</textarea
+                    value="Descripcion"
+                  >Descripción del producto
+                  </textarea
                   >
                 </div>
               </div>
+              <div class=" col-md-5 pl-md-4">
+                <div class=" form-group">
+                  <label> Categoría </label>
+                  <div class="input-group">
+                    <select class="custom-select" name="miselect" [(ngModel)]="seleccionado">
+                      <option [value]="item" *ngFor="let item of lista">{{item}}</option>
+                      </select>
+                      <button class=" btn custom" >
+                        <i class=" tim-icons icon-simple-add"> </i>
+                      </button>
+                  </div>
+                </div>
+                <div class=" form-group">
+                  <label> Proveedors </label>
+                  <div class="input-group">
+                    <select class="custom-select" name="miselect" [(ngModel)]="seleccionado">
+                      <option [value]="item" *ngFor="let item of lista">{{item}}</option>
+                      </select>
+                      <button class=" btn custom" >
+                        <i class=" tim-icons icon-simple-add"> </i>
+                      </button>
+                  </div>
+                </div>
+              </div>
             </div>
+
           </form>
         </div>
         <div class=" card-footer">
-          <button class=" btn btn-fill btn-danger" type="submit">Save</button>
+          <button class=" btn btn-fill btn-danger" type="submit">Guardar</button>
         </div>
       </div>
     </div>

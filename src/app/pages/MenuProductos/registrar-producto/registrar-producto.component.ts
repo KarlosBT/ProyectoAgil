@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistrarProductoComponent implements OnInit {
 
+  seleccionado:string;
+  lista:string[]=["hola","que","tal", "estas"];
   constructor() { }
 
   ngOnInit(): void {
