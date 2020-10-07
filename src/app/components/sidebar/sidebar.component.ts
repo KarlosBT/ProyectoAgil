@@ -44,6 +44,13 @@ export const ROUTES: RouteInfo[] = [
     class: ""
   },
   {
+    path: "/ConsultarProducto",
+    title: "Productos",
+    rtlTitle: "ملف تعريفي للمستخدم",
+    icon: "icon-app",
+    class: ""
+  },
+  {
     path: "/tables",
     title: "Table List",
     rtlTitle: "قائمة الجدول",

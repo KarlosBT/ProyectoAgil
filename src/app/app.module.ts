@@ -13,7 +13,6 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { ComponentsModule } from "./components/components.module";
-import { RegistrarProductoComponent } from './pages/MenuProductos/registrar-producto/registrar-producto.component';
 
 @NgModule({
   imports: [
@@ -26,7 +25,7 @@ import { RegistrarProductoComponent } from './pages/MenuProductos/registrar-prod
     AppRoutingModule,
     ToastrModule.forRoot()
   ],
-  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, RegistrarProductoComponent],
+  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

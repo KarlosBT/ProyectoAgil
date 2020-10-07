@@ -12,6 +12,9 @@ import { NotificationsComponent } from "../../pages/notifications/notifications.
 import { UserComponent } from "../../pages/user/user.component";
 import { TablesComponent } from "../../pages/tables/tables.component";
 import { TypographyComponent } from "../../pages/typography/typography.component";
+import { RegistrarProductoComponent } from '../../pages/MenuProductos/registrar-producto/registrar-producto.component';
+import { ConsultarProductoComponent } from '../../pages/MenuProductos/consultar-producto/consultar-producto.component';
+
 // import { RtlComponent } from "../../pages/rtl/rtl.component";
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
@@ -32,6 +35,8 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
     TypographyComponent,
     NotificationsComponent,
     MapComponent,
+    RegistrarProductoComponent,
+    ConsultarProductoComponent
     // RtlComponent
   ]
 })

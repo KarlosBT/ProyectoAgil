@@ -5,8 +5,11 @@ import { Routes, RouterModule } from "@angular/router";
 
 import { AdminLayoutComponent } from "./layouts/admin-layout/admin-layout.component";
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+import { RegistrarProductoComponent } from './pages/MenuProductos/registrar-producto/registrar-producto.component';
+import { ConsultarProductoComponent } from './pages/MenuProductos/consultar-producto/consultar-producto.component';
 
 const routes: Routes = [
+
   {
     path: "",
     redirectTo: "dashboard",
