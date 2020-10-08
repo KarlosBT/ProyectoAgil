@@ -20,7 +20,7 @@ export const ROUTES: RouteInfo[] = [
     class: ''
   },
   {
-    path: '',
+    path: '/providers',
     title: 'Proveedores',
     icon: 'icon-bus-front-12',
     class: ''
@@ -82,11 +82,5 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit() {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
-  }
-  isMobileMenu() {
-    if (window.innerWidth > 991) {
-      return false;
-    }
-    return true;
   }
 }
