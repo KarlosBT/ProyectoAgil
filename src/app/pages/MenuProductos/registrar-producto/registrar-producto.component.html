@@ -5,7 +5,7 @@
       <div class=" card">
         <div class=" card-header"><h4 class=" title">Registro de productos</h4>
           <p class=" category">
-            Los datos marcados con (*) son de carácter obligatorio
+            Los datos marcados con (<a class="text-primary">*</a>) son de carácter obligatorio
           </p>
         </div>
 
@@ -14,7 +14,7 @@
             <div class=" row">
               <div class=" col-md-6 pr-md-1">
                 <div class=" form-group">
-                  <label> Nombre </label>
+                  <label> Nombre <a class="text-primary">*</a></label>
                   <input
                     class=" form-control"
                     placeholder="Producto"
@@ -27,7 +27,7 @@
             <div class=" row">
               <div class=" col-md-5 pr-md-4">
                 <div class=" form-group">
-                  <label> Referencia </label>
+                  <label> Referencia <a class="text-primary">*</a></label>
                   <input
                     class=" form-control"
                     placeholder="Referencia"
@@ -52,7 +52,7 @@
             <div class=" row ">
               <div class=" col-md-5 pl-md-3">
                 <div class=" form-group">
-                  <label> Marca </label>
+                  <label> Marca <a class="text-primary">*</a></label>
                   <div class="input-group">
                     <select class="custom-select" name="miselect" [(ngModel)]="seleccionado">
                       <option [value]="item" *ngFor="let item of lista">{{item}}</option>
@@ -107,7 +107,7 @@
               </div>
               <div class=" col-md-5 pl-md-4">
                 <div class=" form-group">
-                  <label> Categoría </label>
+                  <label> Categoría <a class="text-primary">*</a></label>
                   <div class="input-group">
                     <select class="custom-select" name="miselect" [(ngModel)]="seleccionado">
                       <option [value]="item" *ngFor="let item of lista">{{item}}</option>
@@ -118,7 +118,7 @@
                   </div>
                 </div>
                 <div class=" form-group">
-                  <label> Proveedors </label>
+                  <label> Proveedores <a class="text-primary">*</a></label>
                   <div class="input-group">
                     <select class="custom-select" name="miselect" [(ngModel)]="seleccionado">
                       <option [value]="item" *ngFor="let item of lista">{{item}}</option>
