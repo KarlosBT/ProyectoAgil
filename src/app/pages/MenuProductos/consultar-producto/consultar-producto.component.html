@@ -5,8 +5,14 @@
       <div class=" card">
         <div class=" card-header">
           <h4 class=" title" >Lista de productos</h4>
-          <button class=" btn btn-fill btn-danger" [routerLink]="'/RegistrarProducto'" >Crear</button>
-
+          <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+              <button class=" btn btn-fill btn-danger" [routerLink]="'/RegistrarProducto'" >Crear</button>
+            </div>
+            <div class="col-lg-2  ">
+              <button class=" btn btn-fill btn-danger" [routerLink]="'/productInOut'" >Entradas y Salidas</button>
+            </div>
+          </div>
         </div>
 
         <div class=" card-body all-icons">

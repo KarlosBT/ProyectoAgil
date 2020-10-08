@@ -14,6 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { ComponentsModule } from './components/components.module';
 import { ProviedersComponent } from './pages/provieders/provieders.component';
+import { ProductsInAndOutComponent } from './pages/MenuProductos/products-in-and-out/products-in-and-out.component';
 
 @NgModule({
   imports: [
@@ -26,7 +27,7 @@ import { ProviedersComponent } from './pages/provieders/provieders.component';
     AppRoutingModule,
     ToastrModule.forRoot()
   ],
-  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, ProviedersComponent],
+  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, ProviedersComponent, ProductsInAndOutComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
